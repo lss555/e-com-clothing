@@ -4,7 +4,8 @@ import {
   createUserDocumentFromAuth
 } from '../../utils/firebase/firebase.utils.js';
 import FormInput from '../form-input/form-input.component.jsx';
-import './sign-up-form.styles.scss'
+import './sign-up-form.styles.scss';
+import Button from '../button/button.component.jsx';
 
 const defaultFormFields = {
   displayName: '',
@@ -17,7 +18,7 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  console.log(formFields);
+  // console.log(formFields);
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -83,7 +84,7 @@ const SignUpForm = () => {
           required
           onChange={handleChange} name="confirmPassword" value={confirmPassword}/>
 
-          <button tpye="submit">Sign Up</button>
+          <Button type="submit">Sign Up</Button>
         </form>
     </div>
   );
