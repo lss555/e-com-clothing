@@ -13,7 +13,7 @@ import './sign-in-form-styles.scss';
 
 const defaultFormFields = {
   email: '',
-  password: '',
+  password: ''
 };
 
 const SignInForm = () => {
@@ -37,8 +37,8 @@ const SignInForm = () => {
         email,
         password
       );
-      // console.log(response);
-      resetFormFields();
+    console.log(response);
+    resetFormFields();
     } catch (error) {
       switch (error.code) {
         case 'auth/wrong-password':
@@ -83,7 +83,10 @@ const SignInForm = () => {
         />
         <div className='buttons-container'>
           <Button type='submit'>Sign In</Button>
-          <Button type='button' buttonType='google' onClick={signInWithGoogle}>
+
+          <Button
+          type='button'
+          buttonType='google' onClick={signInWithGoogle}>
             Google sign in
           </Button>
         </div>
