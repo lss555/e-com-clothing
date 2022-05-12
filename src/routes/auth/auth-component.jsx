@@ -1,5 +1,5 @@
  import SignUpForm from '../../components/sign-up/sign-up-form.component.jsx';
- import './auth.styles.scss'
+ import { AuthContainer } from './auth.styles.jsx'
 
 import SignInForm from '../../components/sign-in/sign-in-form.jsx';
 
@@ -7,10 +7,10 @@ const Auth = () => {
 
 
   return (
-    <div className='authentication-container'>
+    <AuthContainer>
       <SignInForm />
       <SignUpForm />
-    </div>
+    </AuthContainer>
   )
 };
 
