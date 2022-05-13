@@ -21,16 +21,3 @@ export const ItemCount = styled.span`
   font-weight: bold;
   bottom: 12px;
 `;
-
-// .cart-icon-container {
-//
-//
-//   .shopping-icon {
-//     width: 24px;
-//     height: 24px;
-//   }
-//
-//   .item-count {
-//
-//   }
-// }
