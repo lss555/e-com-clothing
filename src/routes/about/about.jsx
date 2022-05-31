@@ -81,7 +81,7 @@ const About = () => {
     <Container>
       <Header>About Us</Header>
       <Spacer>
-        <H3 id='individual'>What're we about?</H3>
+        <H3 id='individual'>What is SunnySide about?</H3>
 
         <Paragraph>Sunnyside is about creating great clothing and apparel at a low cost. We believe our apparel should be accessible by all and be of the highest quality. Our jackets arn't made to be rain proof but we make them all water resistant because we believe in building high quality clothing. Jackets are used outside and in cold weather so we make them like this so you'll never be caught out in the cold and wet. We started in 2016 and have had great feedback on our clothing, and plan to expand a range of even more hats and apperal. Watch our social media for new drops and deals!</Paragraph>
       </Spacer>
