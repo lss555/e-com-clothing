@@ -27,3 +27,57 @@ export const NavLink = styled(Link)`
   padding: 10px 15px;
   cursor: pointer;
 `;
+
+export const FooterContainer = styled.h1`
+  color: black;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+`;
+
+export const FooterSocialMedia = styled.section`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const FooterInfo = styled.div`
+  border-top: solid #9e592e 2px;
+  padding-top: 2rem;
+  border-bottom: solid #9e592e 2px;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+`;
+
+
+export const FooterInfoLeft = styled.div`
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 30%;
+  align-items: center;
+`;
+
+export const FooterInfoRight = styled.div`
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 30%;
+  align-items: center;
+`;
+export const FooterInfoCenter = styled.div`
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 30%;
+`;
+
+export const InternalLink = styled(Link)`
+  color: black;
+`;
