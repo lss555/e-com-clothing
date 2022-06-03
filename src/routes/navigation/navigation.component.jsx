@@ -2,7 +2,7 @@ import { Outlet } from 'react-router-dom';
 import { Fragment } from 'react'
 import { ReactComponent as Logo} from '../../assets/icons8-sun.svg';
 import CartIcon from '../../components/cart-icon/cart-icon.component.jsx';
-import { NavigationContainer, NavLinks, NavLink, LogoContainer, FooterContainer, FooterSocialMedia, FooterInfoLeft, FooterInfoRight, InternalLink, FooterInfo, FooterInfoCenter } from './navigation.styles.jsx';
+import { NavigationContainer, NavLinks, NavLink, LogoContainer, FooterContainer, FooterSocialMedia, FooterInfoLeft, FooterInfoRight, InternalLink, FooterInfo, FooterInfoCenter, SocialMediaLink } from './navigation.styles.jsx';
 import { selectIsCartOpen } from '../../store/cart/cart.selector'
 import { signOutStart } from '../../store/user/user.action'
 import CartDropdown from '../../components/cart-dropdown/cart-dropdown.component'
@@ -48,16 +48,13 @@ const Navigation = () => {
         <FooterInfo>
           <FooterInfoLeft>
             <FooterSocialMedia>
-              <a href='https://www.linkedin.com/in/chrisheibel7/'>Linkedin</a>
+              <SocialMediaLink href='https://www.instagram.com'>Instagram</SocialMediaLink>
             </FooterSocialMedia>
             <FooterSocialMedia>
-              <a href='https://github.com/lss555'>GitHub</a>
+            contact@sunnyside.com
             </FooterSocialMedia>
             <FooterSocialMedia>
-            ChrisHeibeldev@gmail.com
-            </FooterSocialMedia>
-            <FooterSocialMedia>
-            (720) 813-3248
+            (720) 813-7964
             </FooterSocialMedia>
             <FooterSocialMedia>
             Denver, CO
@@ -69,13 +66,13 @@ const Navigation = () => {
             <InternalLink to='/'>
               HOME
             </InternalLink>
-            <InternalLink to='/'>
+            <InternalLink to='/shop'>
               SHOP
             </InternalLink>
-            <InternalLink to='/'>
+            <InternalLink to='/about'>
               ABOUT
             </InternalLink>
-            <InternalLink to='/'>
+            <InternalLink to='/auth'>
               SIGN IN
             </InternalLink>
           </FooterInfoRight>

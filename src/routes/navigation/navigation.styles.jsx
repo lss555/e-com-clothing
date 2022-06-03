@@ -41,20 +41,27 @@ export const FooterContainer = styled.h1`
 export const FooterSocialMedia = styled.section`
   display: flex;
   flex-direction: row;
+  margin: 3px auto;
+`;
+
+export const SocialMediaLink = styled.a`
+  &:hover {
+    color: #9e592e;
+  }
 `;
 
 export const FooterInfo = styled.div`
   border-top: solid #9e592e 2px;
   padding-top: 2rem;
-  border-bottom: solid #9e592e 2px;
-  padding-bottom: 2rem;
+
   display: flex;
   justify-content: center;
+  width: 100%;
 `;
 
 
 export const FooterInfoLeft = styled.div`
-  font-size: small;
+  font-size: medium;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -63,7 +70,7 @@ export const FooterInfoLeft = styled.div`
 `;
 
 export const FooterInfoRight = styled.div`
-  font-size: small;
+  font-size: medium;
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
@@ -80,4 +87,8 @@ export const FooterInfoCenter = styled.div`
 
 export const InternalLink = styled(Link)`
   color: black;
+  margin: 3px auto;
+  &:hover {
+    color: #9e592e;
+  }
 `;
