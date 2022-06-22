@@ -11,4 +11,5 @@ Redux-saga,
 Firebase,
 Javascript,
 SCSS,
-Dynmaic programming
+Dynmaic programming,
+Stripe API
